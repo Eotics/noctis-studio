@@ -60,6 +60,8 @@ export function SmoothScroll({ children }: { children: ReactNode }) {
           lenis.start();
           document.documentElement.classList.remove("is-locked");
         }
+        // The page may have just changed (route transition): refresh Lenis' cached scroll limit first.
+        lenis.resize();
         lenis.scrollTo(el, {
           offset: options.offset ?? 0,
           immediate: options.immediate,

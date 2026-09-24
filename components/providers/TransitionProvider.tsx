@@ -3,6 +3,7 @@
 import { usePathname, useRouter } from "next/navigation";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, type ReactNode } from "react";
 import { gsap, prefersReducedMotion, ScrollTrigger } from "@/lib/gsap";
+import { stripBase } from "@/lib/site";
 import { useSmoothScroll } from "./SmoothScroll";
 import styles from "./TransitionProvider.module.css";
 
@@ -37,7 +38,7 @@ export function TransitionProvider({ children }: { children: ReactNode }) {
         window.location.href = href;
         return;
       }
-      if (url.pathname === window.location.pathname) {
+      if (stripBase(url.pathname) === stripBase(window.location.pathname)) {
         if (url.hash) {
           scrollToHash(url.hash);
           history.replaceState(null, "", url.hash);

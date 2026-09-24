@@ -1,3 +1,5 @@
+import { asset } from "./site";
+
 export type Project = {
   slug: string;
   index: string;
@@ -29,7 +31,7 @@ export const projects: Project[] = [
     excerpt:
       "An immersive web journey for a private Alpine observatory, turning forty years of sky data into a universe you can navigate.",
     services: ["Art Direction", "WebGL", "Creative Development", "Sound Design"],
-    cover: "/images/work/aether.svg",
+    cover: asset("/images/work/aether.svg"),
     alt: "Deep blue planet circled by thin orbital lines, with a single orange satellite on a starry background.",
     palette: ["#04050A", "#1F2677", "#9AA3FF", "#FF3D00"],
     challenge:
@@ -58,7 +60,7 @@ export const projects: Project[] = [
     excerpt:
       "A kinetic identity and launch platform for an electric motorcycle lab that builds its machines from first principles.",
     services: ["Brand Strategy", "Identity System", "Web Design", "Motion"],
-    cover: "/images/work/motorlab.svg",
+    cover: asset("/images/work/motorlab.svg"),
     alt: "Black wheel with fine spokes next to horizontal speed stripes and a geometric ML monogram on off-white paper.",
     palette: ["#E8E5DE", "#0B0B0C", "#FF3D00", "#8C8A84"],
     challenge:
@@ -87,7 +89,7 @@ export const projects: Project[] = [
     excerpt:
       "A conversational interface for a climate research model, designed to make uncertainty legible to policymakers.",
     services: ["AI Product Design", "UX Research", "Interface Design", "Prototyping"],
-    cover: "/images/work/orbit.svg",
+    cover: asset("/images/work/orbit.svg"),
     alt: "Glowing white core surrounded by dotted orbital rings and connected nodes over violet and teal light, above a voice waveform.",
     palette: ["#060608", "#5B3CFF", "#22D3C5", "#FFFFFF"],
     challenge:
@@ -116,7 +118,7 @@ export const projects: Project[] = [
     excerpt:
       "A sensorial storefront for a Copenhagen fragrance house where every scent comes with its own weather.",
     services: ["E-Commerce", "Art Direction", "Shopify Headless", "3D Product"],
-    cover: "/images/work/nova.svg",
+    cover: asset("/images/work/nova.svg"),
     alt: "Frosted glass perfume bottle labelled NOVA Nº07 Brume against a warm peach sunset horizon.",
     palette: ["#F5E6D8", "#EBBF9F", "#C46E4F", "#17110F"],
     challenge:
@@ -145,7 +147,7 @@ export const projects: Project[] = [
     excerpt:
       "A generative installation and web tool that lets visitors sculpt their own pavilion — with their hands, in real time.",
     services: ["Creative Technology", "Installation", "Generative Design", "Web App"],
-    cover: "/images/work/form.svg",
+    cover: asset("/images/work/form.svg"),
     alt: "Isometric field of grey extruded columns of varying heights with one orange block standing out.",
     palette: ["#0E0E10", "#3A3A3F", "#8A8A90", "#FF3D00"],
     challenge:
@@ -180,7 +182,7 @@ export const services: Service[] = [
     description:
       "Strategy, naming and visual systems designed to flex across every screen, space and surface — built to move, not just to sit on a page.",
     deliverables: ["Strategy", "Naming", "Logotype", "Guidelines"],
-    preview: "/images/work/motorlab.svg",
+    preview: asset("/images/work/motorlab.svg"),
   },
   {
     index: "02",
@@ -188,7 +190,7 @@ export const services: Service[] = [
     description:
       "Editorial, art-directed websites where hierarchy, rhythm and motion are designed together, from the first sketch to the last pixel.",
     deliverables: ["Art direction", "UX architecture", "Interface", "Design system"],
-    preview: "/images/work/aether.svg",
+    preview: asset("/images/work/aether.svg"),
   },
   {
     index: "03",
@@ -196,7 +198,7 @@ export const services: Service[] = [
     description:
       "Next.js, WebGL and GSAP engineered in-house. We prototype in code from day one, so ideas survive all the way to production.",
     deliverables: ["Front-end", "WebGL", "Headless CMS", "Performance"],
-    preview: "/images/work/form.svg",
+    preview: asset("/images/work/form.svg"),
   },
   {
     index: "04",
@@ -204,7 +206,7 @@ export const services: Service[] = [
     description:
       "Conversational products, generative tools and agent interfaces that stay useful, legible and honest about what they know.",
     deliverables: ["AI product design", "Prototyping", "Conversation design", "Evaluation"],
-    preview: "/images/work/orbit.svg",
+    preview: asset("/images/work/orbit.svg"),
   },
   {
     index: "05",
@@ -212,7 +214,7 @@ export const services: Service[] = [
     description:
       "Research, UX and design systems for digital products people open every day — and would miss if they disappeared.",
     deliverables: ["Research", "UX", "UI", "Design ops"],
-    preview: "/images/work/nova.svg",
+    preview: asset("/images/work/nova.svg"),
   },
   {
     index: "06",
@@ -220,7 +222,7 @@ export const services: Service[] = [
     description:
       "Real-time 3D, motion languages and interactive installations that give brands a physical presence on the screen.",
     deliverables: ["Motion language", "Real-time 3D", "Installations", "Launch films"],
-    preview: "/images/stories/why-3d-changes-web-design.svg",
+    preview: asset("/images/stories/why-3d-changes-web-design.svg"),
   },
 ];
 
@@ -261,7 +263,7 @@ export const stories: Story[] = [
     readingTime: "6 min read",
     category: "Branding",
     excerpt: "Logos are becoming systems, and systems are becoming behaviours. What it means to design a brand that moves.",
-    cover: "/images/stories/future-of-digital-brands.svg",
+    cover: asset("/images/stories/future-of-digital-brands.svg"),
     alt: "Grid of black shapes morphing from rotated squares into circles, with one orange shape.",
     body: [
       {
@@ -294,7 +296,7 @@ export const stories: Story[] = [
     readingTime: "8 min read",
     category: "Technology",
     excerpt: "Depth is no longer a gimmick. How real-time rendering is quietly rewriting the grammar of the web page.",
-    cover: "/images/stories/why-3d-changes-web-design.svg",
+    cover: asset("/images/stories/why-3d-changes-web-design.svg"),
     alt: "White wireframe cube floating above a perspective grid that fades into darkness.",
     body: [
       {
@@ -327,7 +329,7 @@ export const stories: Story[] = [
     readingTime: "7 min read",
     category: "AI",
     excerpt: "Interfaces that think need interfaces that explain. Notes on trust, latency and designing for the unknown.",
-    cover: "/images/stories/designing-for-ai.svg",
+    cover: asset("/images/stories/designing-for-ai.svg"),
     alt: "Topographic white contour lines rippling across a dark field, with one orange line.",
     body: [
       {

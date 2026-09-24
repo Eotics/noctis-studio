@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrl } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { legalPages } from "@/lib/content";
 import { TextReveal } from "@/components/ui/TextReveal";
@@ -15,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const page = legalPages.find((p) => p.slug === slug);
   if (!page) return {};
-  return { title: page.title, alternates: { canonical: `/legal/${page.slug}` }, robots: { index: true, follow: true } };
+  return { title: page.title, alternates: { canonical: absoluteUrl(`/legal/${page.slug}`) }, robots: { index: true, follow: true } };
 }
 
 export default async function LegalPage({ params }: Props) {

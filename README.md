@@ -9,7 +9,10 @@ npm run build      # build de production (20 routes statiques)
 npm run start      # sert le build
 npm run typecheck
 node scripts/generate-art.mjs   # régénère les visuels SVG des projets et articles
+npm run deploy     # export statique + publication sur GitHub Pages (branche gh-pages)
 ```
+
+Site en ligne : https://eotics.github.io/noctis-studio
 
 ## Structure
 

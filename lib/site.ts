@@ -1,3 +1,12 @@
+/** Sub-path the site is served from (e.g. "/noctis-studio" on GitHub Pages), empty at the domain root. */
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+/** Public files (/public) are not prefixed by Next.js when referenced as strings. */
+export const asset = (path: string) => `${basePath}${path}`;
+
+/** Removes the base path from a browser pathname, to compare it with app routes. */
+export const stripBase = (pathname: string) => (basePath && pathname.startsWith(basePath) ? pathname.slice(basePath.length) || "/" : pathname);
+
 export const site = {
   name: "NOCTIS STUDIO",
   shortName: "NOCTIS",
@@ -26,5 +35,8 @@ export const navigation = [
   { index: "04", label: "Stories", href: "/#stories" },
   { index: "05", label: "Contact", href: "/#contact" },
 ] as const;
+
+/** Absolute URL of a route, for canonical links and the sitemap. */
+export const absoluteUrl = (path: string) => `${site.url}${path === "/" ? "" : path}`;
 
 export const mailto = `mailto:${site.email}?subject=${encodeURIComponent("New project — NOCTIS STUDIO")}`;

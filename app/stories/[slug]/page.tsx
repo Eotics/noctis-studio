@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrl } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { stories } from "@/lib/content";
 import { RevealImage } from "@/components/ui/RevealImage";
@@ -19,7 +20,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: story.title,
     description: story.excerpt,
-    alternates: { canonical: `/stories/${story.slug}` },
+    alternates: { canonical: absoluteUrl(`/stories/${story.slug}`) },
     openGraph: { title: story.title, description: story.excerpt, type: "article", publishedTime: story.dateTime },
   };
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import type { ComponentProps, FocusEvent, MouseEvent, PointerEvent } from "react";
 import { usePageTransition } from "@/components/providers/TransitionProvider";
+import { stripBase } from "@/lib/site";
 
 type Props = Omit<ComponentProps<typeof Link>, "href" | "prefetch"> & { href: string };
 
@@ -17,7 +18,7 @@ export function TransitionLink({ href, onClick, onPointerEnter, onFocus, target,
 
   const prefetch = () => {
     const url = new URL(href, window.location.href);
-    if (url.origin === window.location.origin && url.pathname !== window.location.pathname) router.prefetch(url.pathname);
+    if (url.origin === window.location.origin && stripBase(url.pathname) !== stripBase(window.location.pathname)) router.prefetch(url.pathname);
   };
 
   const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {

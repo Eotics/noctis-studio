@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Archivo, JetBrains_Mono } from "next/font/google";
 import type { ReactNode } from "react";
-import { site } from "@/lib/site";
+import { absoluteUrl, site } from "@/lib/site";
 import { SmoothScroll } from "@/components/providers/SmoothScroll";
 import { TransitionProvider } from "@/components/providers/TransitionProvider";
 import { Preloader } from "@/components/ui/Preloader";
@@ -25,7 +25,7 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(site.url),
+  metadataBase: new URL(`${site.url}/`),
   title: {
     default: "NOCTIS STUDIO — We design digital experiences that people remember",
     template: "%s — NOCTIS STUDIO",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   keywords: ["creative studio", "digital agency Paris", "brand identity", "web design", "creative development", "WebGL", "AI experiences", "motion design"],
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,
-  alternates: { canonical: "/" },
+  alternates: { canonical: absoluteUrl("/") },
   openGraph: {
     type: "website",
     locale: "en_GB",

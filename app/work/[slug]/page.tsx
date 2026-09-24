@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { absoluteUrl } from "@/lib/site";
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/content";
 import { CaseStudy } from "@/components/sections/CaseStudy";
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${project.name} — ${project.category}`,
     description: project.excerpt,
-    alternates: { canonical: `/work/${project.slug}` },
+    alternates: { canonical: absoluteUrl(`/work/${project.slug}`) },
     openGraph: { title: `${project.name} — NOCTIS STUDIO`, description: project.excerpt, type: "article" },
   };
 }
