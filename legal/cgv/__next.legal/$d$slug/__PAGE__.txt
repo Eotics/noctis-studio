@@ -1,0 +1,65 @@
+1:"$Sreact.fragment"
+2:I[53801,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js","/noctis-studio/_next/static/chunks/2on1n3wqrg-1s.js"],"TextReveal"]
+3:I[65866,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js","/noctis-studio/_next/static/chunks/2on1n3wqrg-1s.js"],"TransitionLink"]
+4:I[97367,["/noctis-studio/_next/static/chunks/3fntmmi971322.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+9:I[97367,["/noctis-studio/_next/static/chunks/3fntmmi971322.js"],"ViewportBoundary"]
+a:I[97367,["/noctis-studio/_next/static/chunks/3fntmmi971322.js"],"MetadataBoundary"]
+8:X
+2b:X
+2b:C
+0:{"buildId":"wVzpL1g0T3XnyfLUMzRyT","data":[{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"subpage-module__HuNy0q__legal","data-theme":"light","lang":"fr","aria-labelledby":"legal-title","children":[["$","header",null,{"className":"subpage-module__HuNy0q__legalHead","children":[["$","p",null,{"className":"label muted","children":["Informations légales — Mise à jour le ","1er septembre 2026"]}],["$","$L2",null,{"as":"h1","id":"legal-title","className":"subpage-module__HuNy0q__legalTitle","by":"words","immediate":true,"children":"Conditions générales de vente"}]]}],["$","div",null,{"className":"subpage-module__HuNy0q__legalBody","children":[["$","section","Objet",{"className":"subpage-module__HuNy0q__legalSection","children":[["$","span",null,{"className":"label subpage-module__HuNy0q__legalIndex","children":"01"}],["$","div",null,{"children":[["$","h2",null,{"className":"subpage-module__HuNy0q__legalH2","children":"Objet"}],["$","p",null,{"children":"Les présentes conditions régissent les prestations de conseil, de design et de développement réalisées par NOCTIS STUDIO pour ses clients professionnels. Toute commande implique leur acceptation sans réserve."}]]}]]}],["$","section","Devis et commande",{"className":"subpage-module__HuNy0q__legalSection","children":[["$","span",null,{"className":"label subpage-module__HuNy0q__legalIndex","children":"02"}],["$","div",null,{"children":[["$","h2",null,{"className":"subpage-module__HuNy0q__legalH2","children":"Devis et commande"}],["$","p",null,{"children":"Chaque projet fait l'objet d'un devis détaillé, valable trente jours. La commande est ferme à réception du devis signé et d'un acompte de 40 %."}]]}]]}],["$","section","Paiement",{"className":"subpage-module__HuNy0q__legalSection","children":[["$","span",null,{"className":"label subpage-module__HuNy0q__legalIndex","children":"03"}],["$","div",null,{"children":[["$","h2",null,{"className":"subpage-module__HuNy0q__legalH2","children":"Paiement"}],["$","p",null,{"children":"Sauf mention contraire, les factures sont payables à trente jours. Tout retard entraîne l'application de pénalités au taux légal et d'une indemnité forfaitaire de 40 € pour frais de recouvrement."}]]}]]}],["$","section","Propriété intellectuelle",{"className":"subpage-module__HuNy0q__legalSection","children":[["$","span",null,{"className":"label subpage-module__HuNy0q__legalIndex","children":"04"}],["$","div",null,{"children":[["$","h2",null,{"className":"subpage-module__HuNy0q__legalH2","children":"Propriété intellectuelle"}],["$","p",null,{"children":"Les droits d'exploitation des livrables sont cédés au client après paiement intégral, pour les usages définis au devis. NOCTIS STUDIO se réserve le droit de présenter le projet dans ses références."}]]}]]}]]}],["$","nav",null,{"className":"subpage-module__HuNy0q__legalNav","aria-label":"Autres pages légales","children":[["$","$L3","mentions-legales",{"href":"/legal/mentions-legales","className":"label","children":["Mentions légales"," ↗"]}],["$","$L3","politique-de-confidentialite",{"href":"/legal/politique-de-confidentialite","className":"label","children":["Politique de confidentialité"," ↗"]}],["$","$L3","cookies",{"href":"/legal/cookies","className":"label","children":["Cookies"," ↗"]}]]}]]}],[["$","script","script-0",{"src":"/noctis-studio/_next/static/chunks/2on1n3wqrg-1s.js","async":true}]],["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":"$@7","staleTime":"$8","varyParams":null},{"rsc":["$","$1","h",{"children":[null,["$","$L9",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#09090b"}],["$","meta","3",{"name":"color-scheme","content":"dark light"}]]}],["$","div",null,{"hidden":true,"children":["$","$La",null,{"children":["$","$5",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Conditions générales de vente — NOCTIS STUDIO"}],["$","meta","1",{"name":"description","content":"NOCTIS STUDIO is an independent creative studio in Paris crafting visual identities, experimental websites, digital products and interactive 3D experiences for ambitious brands."}],"$Lb","$Lc","$Ld","$Le","$Lf","$L10","$L11","$L12","$L13","$L14","$L15","$L16","$L17","$L18","$L19","$L1a","$L1b","$L1c","$L1d","$L1e","$L1f","$L20","$L21","$L22","$L23","$L24","$L25","$L26"]}]}]}],"$L27"]}],"isPartial":"$@28","staleTime":"$8","varyParams":null},{"rsc":"$L29","isPartial":"$@2a","staleTime":"$8","varyParams":"$2b"},{"rsc":"$L2c","isPartial":"$@2d","staleTime":"$8","varyParams":"$2b"},{"rsc":"$L2e","isPartial":"$@2f","staleTime":"$8","varyParams":null}],"isUpgradeableISRFallback":false,"a":"$@30","rootVaryParams":null,"needsRuntimeRequest":"$@31"}
+32:I[27201,["/noctis-studio/_next/static/chunks/3fntmmi971322.js"],"IconMark"]
+33:I[39756,["/noctis-studio/_next/static/chunks/3fntmmi971322.js"],"default"]
+34:I[37457,["/noctis-studio/_next/static/chunks/3fntmmi971322.js"],"default"]
+36:I[33602,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js"],"SmoothScroll"]
+37:I[64938,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js"],"TransitionProvider"]
+38:I[1733,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js"],"Preloader"]
+39:I[40148,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js"],"Navigation"]
+3a:I[99172,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js"],"Footer"]
+3b:I[23208,["/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js"],"ThemeController"]
+:HL["/noctis-studio/_next/static/chunks/1qvortb7jtieb.css","style"]
+:HL["/noctis-studio/_next/static/chunks/0tkhg1t4494q9.css","style"]
+6:null
+b:["$","meta","2",{"name":"application-name","content":"NOCTIS STUDIO"}]
+c:["$","link","3",{"rel":"author","href":"https://eotics.github.io/noctis-studio"}]
+d:["$","meta","4",{"name":"author","content":"NOCTIS STUDIO"}]
+e:["$","meta","5",{"name":"keywords","content":"creative studio,digital agency Paris,brand identity,web design,creative development,WebGL,AI experiences,motion design"}]
+f:["$","meta","6",{"name":"creator","content":"NOCTIS STUDIO"}]
+10:["$","meta","7",{"name":"robots","content":"index, follow"}]
+11:["$","link","8",{"rel":"canonical","href":"https://eotics.github.io/noctis-studio/legal/cgv"}]
+12:["$","meta","9",{"property":"og:title","content":"NOCTIS STUDIO — We design digital experiences that people remember"}]
+13:["$","meta","10",{"property":"og:description","content":"NOCTIS STUDIO is an independent creative studio in Paris crafting visual identities, experimental websites, digital products and interactive 3D experiences for ambitious brands."}]
+14:["$","meta","11",{"property":"og:url","content":"https://eotics.github.io/noctis-studio"}]
+15:["$","meta","12",{"property":"og:site_name","content":"NOCTIS STUDIO"}]
+16:["$","meta","13",{"property":"og:locale","content":"en_GB"}]
+17:["$","meta","14",{"property":"og:image","content":"https://eotics.github.io/noctis-studio/opengraph-image?debf6449616b8e97"}]
+18:["$","meta","15",{"property":"og:image:type","content":"image/png"}]
+19:["$","meta","16",{"property":"og:image:width","content":"1200"}]
+1a:["$","meta","17",{"property":"og:image:height","content":"630"}]
+1b:["$","meta","18",{"property":"og:image:alt","content":"NOCTIS STUDIO — We design digital experiences that people remember."}]
+1c:["$","meta","19",{"property":"og:type","content":"website"}]
+1d:["$","meta","20",{"name":"twitter:card","content":"summary_large_image"}]
+1e:["$","meta","21",{"name":"twitter:title","content":"NOCTIS STUDIO"}]
+1f:["$","meta","22",{"name":"twitter:description","content":"We design digital experiences that people remember."}]
+20:["$","meta","23",{"name":"twitter:image","content":"https://eotics.github.io/noctis-studio/opengraph-image?debf6449616b8e97"}]
+21:["$","meta","24",{"name":"twitter:image:alt","content":"NOCTIS STUDIO — We design digital experiences that people remember."}]
+22:["$","meta","25",{"name":"twitter:image:type","content":"image/png"}]
+23:["$","meta","26",{"name":"twitter:image:width","content":"1200"}]
+24:["$","meta","27",{"name":"twitter:image:height","content":"630"}]
+25:["$","link","28",{"rel":"icon","href":"/noctis-studio/icon.svg?icon.0lsxcic2z1_lx.svg","sizes":"any","type":"image/svg+xml"}]
+26:["$","$L32","29",{}]
+27:["$","meta",null,{"name":"next-size-adjust","content":""}]
+29:["$","$1","c",{"children":[null,["$","$L33",null,{"parallelRouterKey":"children","template":["$","$L34",null,{}]}]]}]
+2c:["$","$1","c",{"children":[null,["$","$L33",null,{"parallelRouterKey":"children","template":["$","$L34",null,{}]}]]}]
+35:["$","style",null,{"children":"[data-preloader]{display:none!important}"}]
+2e:["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/noctis-studio/_next/static/chunks/1qvortb7jtieb.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/noctis-studio/_next/static/chunks/0tkhg1t4494q9.css","precedence":"next"}],["$","script","script-0",{"src":"/noctis-studio/_next/static/chunks/2cmn2cxmkx798.js","async":true}],["$","script","script-1",{"src":"/noctis-studio/_next/static/chunks/1b9ac_epx4lo7.js","async":true}]],["$","html",null,{"lang":"en","className":"archivo_d12dbb1f-module__fxFCNG__variable jetbrains_mono_5200a4c-module__ync41G__variable","children":["$","body",null,{"children":[["$","noscript",null,{"children":"$35"}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"NOCTIS STUDIO\",\"url\":\"https://eotics.github.io/noctis-studio\",\"email\":\"hello@noctis.studio\",\"foundingDate\":\"2014\",\"address\":{\"@type\":\"PostalAddress\",\"streetAddress\":\"48 rue de la Folie-Méricourt\",\"postalCode\":\"75011\",\"addressLocality\":\"Paris\",\"addressCountry\":\"FR\"},\"sameAs\":[\"https://www.instagram.com/\",\"https://www.linkedin.com/\",\"https://www.behance.net/\"]}"}}],["$","a",null,{"href":"#main","className":"skip-link","children":"Skip to content"}],["$","$L36",null,{"children":["$","$L37",null,{"children":[["$","$L38",null,{}],["$","$L39",null,{}],["$","main",null,{"id":"main","children":["$","$L33",null,{"parallelRouterKey":"children","template":["$","$L34",null,{}],"notFound":[["$","section",null,{"className":"not-found","data-theme":"dark","aria-labelledby":"nf-title","children":[["$","p",null,{"className":"label muted","children":"Error 404 — Lost in the dark"}],["$","$L2",null,{"as":"h1","id":"nf-title","className":"not-found__title","by":"chars","immediate":true,"children":"404"}],["$","p",null,{"className":"not-found__text","children":"This page drifted out of orbit. The rest of the studio is still where you left it."}],["$","$L3",null,{"href":"/","className":"label not-found__back","children":"← Back to the studio"}]]}],[]]}]}],["$","$L3a",null,{}],["$","$L3b",null,{}]]}]}]]}]}]]}]
+8:300
+31:true
+8:C
+30:0
+28:"$undefined"
+2a:"$undefined"
+2d:"$undefined"
+2f:"$undefined"
+7:"$undefined"
