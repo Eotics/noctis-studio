@@ -1,0 +1,243 @@
+.stage {
+  position: relative;
+  /* The sticky canvas has a negative bottom margin: clip it to the stage (clip keeps sticky working). */
+  overflow: clip;
+}
+
+.canvasWrap {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  margin-bottom: -100svh;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.canvasWrap canvas {
+  position: absolute !important;
+  inset: 0;
+}
+
+.glow {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  width: 80vmin;
+  height: 80vmin;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgb(255 61 0 / 0.14) 0%, rgb(90 100 255 / 0.06) 38%, transparent 66%);
+  opacity: 0.6;
+}
+
+.hero {
+  position: relative;
+  height: 170svh;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: calc(var(--nav-h) + 3vh) var(--pad) var(--pad);
+  overflow: hidden;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  align-items: start;
+}
+
+.kicker {
+  grid-column: 1 / span 4;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.accentDot {
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+}
+
+.intro {
+  grid-column: 9 / -1;
+  max-width: 30ch;
+  font-size: var(--fs-lead);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  color: var(--fg);
+}
+
+.title {
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-variation-settings: "wdth" 84;
+  letter-spacing: -0.065em;
+  line-height: 0.82;
+  text-transform: uppercase;
+  padding-bottom: 2.2vh;
+}
+
+.line {
+  display: flex;
+  align-items: flex-end;
+  will-change: transform;
+}
+
+.mask {
+  display: block;
+  overflow: hidden;
+  padding: 0.04em 0.06em 0.06em 0;
+}
+
+.lineText {
+  display: block;
+  white-space: nowrap;
+}
+
+.l1 {
+  font-size: clamp(3.4rem, 13.2vw, 17rem);
+}
+
+.l2 {
+  justify-content: flex-end;
+  gap: 2.2vw;
+  font-size: clamp(3.4rem, 13.2vw, 17rem);
+}
+
+.l3 {
+  font-size: clamp(3rem, 15.6vw, 21rem);
+  transform-origin: 50% 100%;
+}
+
+.annotation {
+  order: -1;
+  margin-bottom: 1.6vw;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+
+.bottom {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.rule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.cue {
+  display: inline-flex;
+  gap: 0.6rem;
+}
+
+.arrow {
+  display: inline-block;
+  color: var(--accent);
+  animation: bob 1.8s var(--ease-in-out) infinite;
+}
+
+@keyframes bob {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+.coords {
+  justify-self: end;
+}
+
+.next {
+  position: relative;
+  margin-top: -55svh;
+}
+
+@media (max-width: 1023px) {
+  .intro {
+    grid-column: 7 / -1;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: 175svh;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .intro {
+    max-width: 24ch;
+    font-size: 1.05rem;
+  }
+
+  .title {
+    padding-bottom: 3vh;
+  }
+
+  .l1,
+  .l2 {
+    font-size: 17.5vw;
+  }
+
+  .l3 {
+    font-size: 14.6vw;
+  }
+
+  .annotation {
+    display: none;
+  }
+
+  .bottom {
+    grid-template-columns: 1fr auto;
+  }
+
+  .coords {
+    display: none;
+  }
+
+  .cue {
+    justify-self: end;
+  }
+
+  .next {
+    margin-top: -40svh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero {
+    height: auto;
+  }
+  .sticky {
+    position: relative;
+  }
+  .next {
+    margin-top: 0;
+  }
+  .arrow {
+    animation: none;
+  }
+}

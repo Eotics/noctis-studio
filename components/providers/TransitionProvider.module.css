@@ -1,0 +1,48 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 900;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: #f1efea;
+  visibility: hidden;
+  clip-path: inset(100% 0% 0% 0%);
+  pointer-events: none;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 2px;
+  background: var(--accent);
+}
+
+.word {
+  display: flex;
+  font-size: clamp(3rem, 11vw, 11rem);
+  font-weight: 500;
+  font-variation-settings: "wdth" 92;
+  letter-spacing: -0.06em;
+  line-height: 0.9;
+}
+
+.mask {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.06em;
+}
+
+.mask > span {
+  display: inline-block;
+}
+
+.meta {
+  position: absolute;
+  bottom: var(--pad);
+  left: var(--pad);
+  color: var(--muted);
+}

@@ -1,0 +1,24 @@
+.fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.svg {
+  width: min(60vmin, 520px);
+  height: auto;
+  animation: float 9s ease-in-out infinite;
+}
+
+@keyframes float {
+  50% {
+    transform: translateY(-12px) rotate(2deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svg {
+    animation: none;
+  }
+}

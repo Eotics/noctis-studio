@@ -1,0 +1,38 @@
+.roll {
+  position: relative;
+  display: inline-block;
+  height: 1.2em;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 1.2;
+}
+
+.track {
+  display: flex;
+}
+
+.char {
+  position: relative;
+  display: block;
+  height: 1.2em;
+  transition: transform 0.65s var(--ease-out);
+  transition-delay: calc(var(--i) * 16ms);
+}
+
+.char::after {
+  content: attr(data-char);
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+
+:is(a, button):hover .char,
+:is(a, button):focus-visible .char {
+  transform: translateY(-100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .char {
+    transition: none;
+  }
+}

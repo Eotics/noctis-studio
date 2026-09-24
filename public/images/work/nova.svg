@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000"><defs><filter id="gn" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -0.35"/></filter>
+  <linearGradient id="n-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5E6D8"/><stop offset="0.55" stop-color="#EBBF9F"/><stop offset="1" stop-color="#C46E4F"/></linearGradient>
+  <linearGradient id="n-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0.7"/><stop offset="0.35" stop-color="#fff" stop-opacity="0.18"/><stop offset="0.8" stop-color="#fff" stop-opacity="0.32"/><stop offset="1" stop-color="#fff" stop-opacity="0.6"/></linearGradient>
+  <linearGradient id="n-liquid" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF3D00" stop-opacity="0.35"/><stop offset="1" stop-color="#8E2F14" stop-opacity="0.55"/></linearGradient>
+  <filter id="n-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="36"/></filter>
+  <filter id="n-shadow" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="16"/></filter></defs><rect width="1600" height="1000" fill="url(#n-sky)"/>
+  <circle cx="1110" cy="370" r="240" fill="#FFF3E6" opacity="0.95" filter="url(#n-blur)"/>
+  <g stroke="#6B2A17" stroke-opacity="0.14"><line x1="0" y1="690" x2="1600" y2="690"/><line x1="0" y1="696" x2="1600" y2="696"/><line x1="0" y1="704.2" x2="1600" y2="704.2"/><line x1="0" y1="714.6" x2="1600" y2="714.6"/><line x1="0" y1="727.2" x2="1600" y2="727.2"/><line x1="0" y1="742" x2="1600" y2="742"/><line x1="0" y1="759" x2="1600" y2="759"/><line x1="0" y1="778.2" x2="1600" y2="778.2"/><line x1="0" y1="799.6" x2="1600" y2="799.6"/><line x1="0" y1="823.2" x2="1600" y2="823.2"/><line x1="0" y1="849" x2="1600" y2="849"/><line x1="0" y1="877" x2="1600" y2="877"/><line x1="0" y1="907.2" x2="1600" y2="907.2"/><line x1="0" y1="939.6" x2="1600" y2="939.6"/><line x1="0" y1="974.2" x2="1600" y2="974.2"/><line x1="0" y1="1011" x2="1600" y2="1011"/></g>
+  <ellipse cx="800" cy="822" rx="210" ry="22" fill="#4E1F10" opacity="0.35" filter="url(#n-shadow)"/>
+  <rect x="756" y="300" width="88" height="70" fill="#fff" fill-opacity="0.35" stroke="#fff" stroke-opacity="0.6"/>
+  <rect x="728" y="214" width="144" height="92" rx="4" fill="#17110F"/>
+  <rect x="728" y="214" width="144" height="10" fill="#fff" fill-opacity="0.08"/>
+  <rect x="665" y="362" width="270" height="456" rx="38" fill="url(#n-glass)" stroke="#fff" stroke-opacity="0.8" stroke-width="1.5"/>
+  <rect x="674" y="530" width="252" height="280" rx="30" fill="url(#n-liquid)"/>
+  <rect x="684" y="384" width="22" height="410" rx="11" fill="#fff" opacity="0.55"/>
+  <rect x="730" y="600" width="140" height="120" fill="#F7EFE8" fill-opacity="0.92"/>
+  <text x="800" y="648" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="30" letter-spacing="6" fill="#17110F" text-anchor="middle">NOVA</text>
+  <text x="800" y="678" font-family="ui-monospace, 'JetBrains Mono', Menlo, monospace" font-size="11" letter-spacing="1.5" fill="#17110F" fill-opacity="0.8" text-anchor="middle">Nº07 — BRUME</text>
+  <text x="800" y="700" font-family="ui-monospace, 'JetBrains Mono', Menlo, monospace" font-size="9" letter-spacing="1.5" fill="#17110F" fill-opacity="0.55" text-anchor="middle">50 ML / EAU DE PARFUM</text>
+  <text x="90" y="90" font-family="ui-monospace, 'JetBrains Mono', Menlo, monospace" font-size="15" letter-spacing="1.5" fill="#3A1A0F" fill-opacity="0.75" text-anchor="start">NOVA PARFUMS — KØBENHAVN</text>
+  <text x="1510" y="90" font-family="ui-monospace, 'JetBrains Mono', Menlo, monospace" font-size="13" letter-spacing="1.5" fill="#3A1A0F" fill-opacity="0.55" text-anchor="end">WEATHER: FOG / 11°C</text>
+  <g stroke="#3A1A0F" stroke-opacity="0.5" stroke-width="1"><line x1="1502" y1="930" x2="1518" y2="930"/><line x1="1510" y1="922" x2="1510" y2="938"/></g>
+  <rect width="1600" height="1000" filter="url(#gn)" opacity="0.22" style="mix-blend-mode:overlay"/></svg>

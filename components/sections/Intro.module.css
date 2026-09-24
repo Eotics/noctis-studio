@@ -1,0 +1,87 @@
+.intro {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: clamp(2.5rem, 6vw, 6rem);
+  padding: 22vh var(--pad) 18vh;
+}
+
+.head {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.rule {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.statement {
+  max-width: 15.5ch;
+  font-size: clamp(2.6rem, 7.4vw, 9.6rem);
+  font-weight: 500;
+  font-variation-settings: "wdth" 88;
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+}
+
+.em {
+  font-style: normal;
+}
+
+.foot {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  row-gap: 2rem;
+  align-items: end;
+}
+
+.body {
+  grid-column: 1 / span 4;
+  max-width: 36ch;
+  color: var(--muted);
+}
+
+.disciplines {
+  grid-column: 7 / span 3;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.cue {
+  grid-column: 11 / -1;
+  justify-self: end;
+}
+
+@media (max-width: 1023px) {
+  .body {
+    grid-column: 1 / span 6;
+  }
+  .disciplines {
+    grid-column: 8 / -1;
+  }
+  .cue {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    padding-block: 16vh 12vh;
+  }
+  .statement {
+    font-size: 12.4vw;
+    --indent: 0.8em;
+  }
+  .body,
+  .disciplines {
+    grid-column: 1 / -1;
+  }
+}

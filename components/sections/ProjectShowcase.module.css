@@ -1,0 +1,274 @@
+.showcase {
+  display: none;
+  position: relative;
+}
+
+@media (min-width: 1024px) and (prefers-reduced-motion: no-preference) {
+  .showcase {
+    display: block;
+  }
+}
+
+.pin {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  overflow: hidden;
+}
+
+/* ── counter ── */
+.counter {
+  position: absolute;
+  z-index: 3;
+  top: calc(var(--nav-h) + 3vh);
+  left: var(--pad);
+  display: flex;
+  align-items: flex-start;
+  font-size: clamp(4rem, 8.4vw, 10rem);
+  font-weight: 300;
+  font-variation-settings: "wdth" 70;
+  letter-spacing: -0.06em;
+  line-height: 0.8;
+  pointer-events: none;
+}
+
+.digitMask {
+  display: block;
+  height: 0.8em;
+  overflow: hidden;
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+
+.digits span {
+  display: block;
+  height: 0.8em;
+}
+
+.total {
+  margin: 0.4rem 0 0 0.9rem;
+  color: var(--muted);
+}
+
+/* ── progress rail ── */
+.rail {
+  position: absolute;
+  z-index: 3;
+  right: var(--pad);
+  top: 50%;
+  translate: 0 -50%;
+  display: flex;
+  gap: 0.9rem;
+  pointer-events: none;
+}
+
+.railTrack {
+  position: relative;
+  width: 1px;
+  background: var(--line);
+}
+
+.railFill {
+  position: absolute;
+  inset: 0;
+  background: var(--accent);
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+
+.railList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  color: var(--muted);
+}
+
+.railList li {
+  transition:
+    color 0.4s,
+    transform 0.6s var(--ease-out);
+}
+
+.railActive {
+  color: var(--fg);
+  transform: translateX(-4px);
+}
+
+/* ── projects ── */
+.projects,
+.project {
+  position: absolute;
+  inset: 0;
+}
+
+.project {
+  pointer-events: none;
+}
+
+.isActive {
+  pointer-events: auto;
+  z-index: 2;
+}
+
+.article {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--gap);
+  align-items: center;
+  padding: calc(var(--nav-h) + 3vh) calc(var(--pad) + 3.5rem) var(--pad) var(--pad);
+}
+
+.textCol {
+  grid-column: 1 / span 5;
+  grid-row: 1;
+  align-self: end;
+  position: relative;
+  z-index: 2;
+  padding-bottom: 1vh;
+}
+
+.nameMask {
+  overflow: hidden;
+  padding-bottom: 0.06em;
+  margin-bottom: 1.5rem;
+}
+
+.name {
+  font-size: clamp(3.5rem, 8vw, 10rem);
+  font-weight: 500;
+  font-variation-settings: "wdth" 84;
+  letter-spacing: -0.06em;
+  line-height: 0.86;
+  text-transform: uppercase;
+  transform-origin: 0% 100%;
+}
+
+.meta {
+  display: grid;
+  gap: 1.1rem;
+  max-width: 36ch;
+}
+
+.category {
+  color: var(--fg);
+}
+
+.excerpt {
+  color: var(--muted);
+  font-size: var(--fs-body);
+  line-height: 1.45;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1rem;
+  color: var(--muted);
+}
+
+.services li::before {
+  content: "+ ";
+  color: var(--accent);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  justify-self: start;
+  margin-top: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-label);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.ctaLine {
+  width: 2.5rem;
+  height: 1px;
+  background: currentColor;
+  transform-origin: left center;
+  transition:
+    width 0.7s var(--ease-out),
+    background-color 0.4s;
+}
+
+.cta:hover .ctaLine,
+.cta:focus-visible .ctaLine {
+  width: 4.5rem;
+  background: var(--accent);
+}
+
+.frameBox {
+  grid-column: 6 / -1;
+  grid-row: 1;
+  position: relative;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+
+.frame {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+  background: var(--ink-2);
+  will-change: transform;
+}
+
+.coverWrap {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+}
+
+.cover {
+  object-fit: cover;
+  transition: transform 1.2s var(--ease-out);
+}
+
+.shade {
+  position: absolute;
+  inset: 0;
+  background: var(--ink);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.viewLabel,
+.frameMeta {
+  position: absolute;
+  z-index: 2;
+  padding: 0.55rem 0.8rem;
+  color: #f1efea;
+  background: rgb(9 9 11 / 0.72);
+  transition:
+    opacity 0.5s var(--ease-out),
+    transform 0.7s var(--ease-out);
+}
+
+.viewLabel {
+  top: 1rem;
+  left: 1rem;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.frameMeta {
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.frame:hover .viewLabel {
+  opacity: 1;
+  transform: none;
+}
+
+.frame:hover .cover {
+  transform: scale(1.03);
+}
